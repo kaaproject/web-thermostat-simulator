@@ -1,0 +1,1 @@
+export const getMqttClient = (state: any) => state['mqttState']['mqttClient'];

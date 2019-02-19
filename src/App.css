@@ -1,0 +1,161 @@
+html, body {
+  height: 100%;
+  font-family: 'Rajdhani';
+  font-weight: normal;
+  font-size: 14pt;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+#root {
+  background-color: #24292e;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100%;
+}
+
+.App {
+  height: 90%;
+  display: flex;
+  flex: 6;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  color: white;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.App p {
+  text-align: center;
+}
+
+.token-holder {
+  /* display: inline-flex !important;
+  margin-left: 0px !important; */
+}
+
+.first_steps_div {
+  border: 1px solid rgba(157, 180, 191, 0.08);
+  background-color: rgba(53, 64, 72, 0.08);
+  padding: 10px;
+}
+
+.first_steps_div p {
+  text-align: center;
+}
+
+
+.kaaiot_logo {
+  width: 150px;
+  margin-top: 10px;
+}
+
+@media only screen and (min-height: 600px){
+  .App {
+    flex: 2;
+  }
+  .first_steps_div {
+    padding: 40px;
+  }
+  .first_steps_div p {
+    text-align: left;
+  }
+  .token-holder {
+    /* display: inline-flex !important;
+    margin-left: 20px !important; */
+  }
+  .kaaiot_logo {
+    width: 300px;
+  }
+}
+
+.shadow_div {
+  height: 20px;
+  background-image: linear-gradient(-180deg, black, #24292e);
+  opacity: .4;
+}
+
+.Collapsible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  flex: 1;
+  padding: 0 10px;
+}
+
+.Collapsible__contentOuter {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.Collapsible__trigger {
+  display: block;
+  font-weight: 400;
+  /* text-decoration: none; */
+  /* color: grey; */
+  position: relative;
+  /* border: 1px solid white; */
+  padding: 10px;
+  /* background: cyan; */
+  color: white;
+  width: 65px;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+
+.Collapsible__trigger:after {
+    font-family: 'FontAwesome';
+    content: '↓';
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+  }
+
+  .Collapsible__trigger.is-open:after {
+    
+      transform: rotateZ(180deg);
+    
+  }
+
+  .Collapsible__trigger.is-disabled {
+    opacity: 0.5;
+    background-color: grey;
+  }

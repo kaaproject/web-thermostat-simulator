@@ -1,0 +1,27 @@
+{
+  "presets": [
+      [ "env",
+          {
+              "modules": false,
+              "useBuiltIns": "usage"
+          }
+      ],
+    //   "react",
+      "jest",
+      "@babel/preset-typescript", 
+      "@babel/preset-env",
+      "@babel/preset-react",
+      ["@babel/env", { "modules": false }]
+  ],
+  "plugins": [
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread"
+],
+  "env": {
+      "test": {
+          "presets": ["react"],
+          "plugins": ["transform-es2015-modules-commonjs"]
+      }
+
+  }
+}

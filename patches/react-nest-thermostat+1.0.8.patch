@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-nest-thermostat/dist/react-nest-thermostat.js b/node_modules/react-nest-thermostat/dist/react-nest-thermostat.js
+index 07301f7..f228393 100644
+--- a/node_modules/react-nest-thermostat/dist/react-nest-thermostat.js
++++ b/node_modules/react-nest-thermostat/dist/react-nest-thermostat.js
+@@ -178,7 +178,7 @@ class Thermostat extends React.Component {
+       React.createElement(
+         'text',
+         { x: radius, y: radius, style: styles.away },
+-        'AWAY'
++        this.props.awayTitle
+       ),
+       React.createElement('path', { d: leafDef, style: styles.leaf,
+         transform: ['translate(', translate[0], ',', translate[1], ')'].join('')
